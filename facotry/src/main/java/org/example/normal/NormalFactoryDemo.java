@@ -10,5 +10,17 @@ package org.example.normal;
  * @version: 1.0
  */
 public class NormalFactoryDemo {
+    public static void main(String[] args) {
+        IFactory circleFactory = new CircleFactory();
+        Shape circle = circleFactory.getInstance();
+        circle.draw();
 
+        IFactory rectangleFactory = new RectangleFactory();
+        Shape rectangle = rectangleFactory.getInstance();
+        rectangle.draw();
+
+        IFactory squareFactory = new SquareFactory();
+        Shape square = squareFactory.getInstance();
+        square.draw();
+    }
 }
