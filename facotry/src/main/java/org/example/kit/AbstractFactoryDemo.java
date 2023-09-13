@@ -1,6 +1,7 @@
 package org.example.kit;
 
 import org.example.kit.keyboard.Keyboard;
+import org.example.kit.monitor.Monitor;
 import org.example.kit.mouse.Mouse;
 
 /**
@@ -17,10 +18,17 @@ public class AbstractFactoryDemo {
         IHardware macFactory = new MacFactory();
         Keyboard keyboard = macFactory.getKeyboard();
         keyboard.input();   //Mac 专用键盘
+        Mouse mouse = macFactory.getMouse();
+        mouse.click();     //Mac 专用鼠标
+        Monitor monitor = macFactory.getMonitor();
+        monitor.show();     //mac 显示器
 
-        IHardware winFactory = new WinFactory();
-        Mouse mouse = winFactory.getMouse();
-        mouse.click();  //win 专用鼠标
- 
+        IHardware winFactory = new MacFactory();
+        Keyboard keyboard1 = winFactory.getKeyboard();
+        keyboard.input();   //win 专用键盘
+        Mouse mouse1 = winFactory.getMouse();
+        mouse1.click();     //win 专用鼠标
+        Monitor monitor1 = winFactory.getMonitor();
+        monitor1.show();     //win 显示器
     }
 }
