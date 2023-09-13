@@ -1,6 +1,4 @@
-package org.example.normal;
-
-import org.example.simple.Monitor;
+package org.example.simple;
 
 /**
  * @projectName: design-pattern-2023
@@ -12,5 +10,5 @@ import org.example.simple.Monitor;
  * @version: 1.0
  */
 public interface IFactory {
-    Monitor getMonitor();
+    Monitor getMonitor(String monitorType);
 }
