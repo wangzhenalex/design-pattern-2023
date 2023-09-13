@@ -1,4 +1,4 @@
-package org.example;
+package org.example.simple;
 
 /**
  * @description: TODO
