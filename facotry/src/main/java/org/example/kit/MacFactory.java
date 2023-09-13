@@ -12,7 +12,7 @@ import org.example.kit.mouse.Mouse;
  * @package: org.example.kit
  * @className: MacFactory
  * @author: zhen.wang
- * @description: mac电脑整机声场
+ * @description: mac电脑整机
  * @date: 2023/9/13 10:17
  * @version: 1.0
  */
