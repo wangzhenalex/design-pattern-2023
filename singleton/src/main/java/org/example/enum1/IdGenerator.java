@@ -12,7 +12,9 @@ import java.util.concurrent.atomic.AtomicLong;
  * @version: 1.0
  */
 public enum IdGenerator {
-    INSTANCE;
+    INSTANCE,
+    INSTANCE2,
+    ;
     private AtomicLong id = new AtomicLong(0);
     public long getId() {
         return id.incrementAndGet();

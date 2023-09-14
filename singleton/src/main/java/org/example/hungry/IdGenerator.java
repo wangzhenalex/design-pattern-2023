@@ -19,7 +19,7 @@ public class IdGenerator {
      *
      * 缺点：
      * 1、不支持延迟加载实例。
-     * 2、在类加载的期间，就初始化实例，占用空间。
+     * 2、在类加载的期间，就初始化实例，有可能造成资源浪费
      */
     private AtomicLong id = new AtomicLong(0);
     private static final IdGenerator instance = new IdGenerator();

@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class IdGenerator {
     /**
      * 优点：
-     * 1、是⽀持延迟加载
+     * 1、是⽀持延迟加载，加快启动速度
      * 缺点：
      * 1、synchronzed 锁粒度⼤，如果该单例被多次调⽤，那么每次都会进⼊synchronized代码块，造成不必要的同步开销
      * 2、如果创建对象失败，要这个时候才发现

@@ -20,17 +20,21 @@ public class IdGenerator {
      */
     private AtomicLong id = new AtomicLong(0);
     private static IdGenerator instance;
-    private IdGenerator() {}
+
+    private IdGenerator() {
+    }
+
     public static IdGenerator getInstance() {
         //第一层校验，解决懒汉式的并发问题
         if (instance == null) {
-            synchronized(IdGenerator.class) {
+            synchronized (IdGenerator.class) {
                 /**
                  * 如果没有第⼆次校验，假设线程t1执⾏了第⼀次校验后，判断为null，这时t2也获取了CPU 执⾏权，也执⾏了第⼀次校验，判断也为null。
                  * 接下来t2获得锁，创建实例。
                  * 这时t1⼜获得CPU执⾏权， 由于之前已经进⾏了第⼀次校验，结果为null（不会再次判断），获得锁后，直接创建实例。
                  * 结果就会导 致创建多个实例。
                  * 所以需要在同步代码⾥⾯进⾏第⼆次校验，如果实例为空，则进⾏创建。
+                 * /resource/双层null判断.jpg
                  */
                 if (instance == null) {
                     instance = new IdGenerator();
@@ -39,6 +43,7 @@ public class IdGenerator {
         }
         return instance;
     }
+
     public long getId() {
         return id.incrementAndGet();
     }
