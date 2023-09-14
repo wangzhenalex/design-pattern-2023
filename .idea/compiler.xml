@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="facotry" />
         <module name="singleton" />
+        <module name="template" />
       </profile>
     </annotationProcessing>
   </component>
