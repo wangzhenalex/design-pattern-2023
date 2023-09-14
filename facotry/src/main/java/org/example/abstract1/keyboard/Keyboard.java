@@ -1,4 +1,4 @@
-package org.example.kit.keyboard;
+package org.example.abstract1.keyboard;
 
 /**
  * @projectName: design-pattern-2023

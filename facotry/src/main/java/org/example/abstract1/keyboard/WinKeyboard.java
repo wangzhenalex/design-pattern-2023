@@ -1,4 +1,4 @@
-package org.example.kit.keyboard;
+package org.example.abstract1.keyboard;
 
 /**
  * @projectName: design-pattern-2023
@@ -9,9 +9,9 @@ package org.example.kit.keyboard;
  * @date: 2023/9/13 10:19
  * @version: 1.0
  */
-public class MacKeyboard implements Keyboard{
+public class WinKeyboard implements Keyboard{
     @Override
     public void input() {
-        System.out.println("mac键盘");
+        System.out.println("win键盘");
     }
 }

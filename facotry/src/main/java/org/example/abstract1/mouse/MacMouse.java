@@ -1,4 +1,4 @@
-package org.example.kit.mouse;
+package org.example.abstract1.mouse;
 
 /**
  * @projectName: design-pattern-2023

@@ -1,4 +1,4 @@
-package org.example.kit.monitor;
+package org.example.abstract1.monitor;
 
 /**
  * @projectName: design-pattern-2023
