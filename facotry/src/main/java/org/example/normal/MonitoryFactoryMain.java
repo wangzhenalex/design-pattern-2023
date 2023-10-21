@@ -21,5 +21,7 @@ public class MonitoryFactoryMain {
         IFactory factory1 = new OLEDMonitorFactory();
         Monitor monitor1 = factory1.getMonitor();
         monitor1.show();
+
+
     }
 }
