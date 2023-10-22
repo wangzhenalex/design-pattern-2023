@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="singleton" />
         <module name="template" />
+        <module name="proxy" />
         <module name="facotry" />
         <module name="duty-chain" />
       </profile>
