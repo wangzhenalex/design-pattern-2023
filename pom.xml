@@ -12,6 +12,7 @@
         <module>facotry</module>
         <module>singleton</module>
         <module>template</module>
+        <module>duty-chain</module>
     </modules>
 
     <properties>
