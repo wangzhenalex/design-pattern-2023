@@ -13,6 +13,8 @@
         <module>singleton</module>
         <module>template</module>
         <module>duty-chain</module>
+        <module>mediator</module>
+        <module>mediator1</module>
     </modules>
 
     <properties>

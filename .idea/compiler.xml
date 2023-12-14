@@ -12,7 +12,11 @@
         <module name="proxy" />
         <module name="facotry" />
         <module name="duty-chain" />
+        <module name="mediator1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mediator" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
