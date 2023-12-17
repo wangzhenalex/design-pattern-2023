@@ -10,8 +10,9 @@
         <module name="singleton" />
         <module name="template" />
         <module name="proxy" />
-        <module name="facotry" />
         <module name="duty-chain" />
+        <module name="law-of-demeter" />
+        <module name="facotry" />
         <module name="mediator1" />
       </profile>
     </annotationProcessing>

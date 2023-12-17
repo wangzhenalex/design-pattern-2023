@@ -3,20 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>design-pattern-2023</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>org.example</groupId>
-    <artifactId>design-pattern-2023</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>facotry</module>
-        <module>singleton</module>
-        <module>template</module>
-        <module>duty-chain</module>
-        <module>mediator</module>
-        <module>mediator1</module>
-        <module>law-of-demeter</module>
-    </modules>
+    <artifactId>law-of-demeter</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
