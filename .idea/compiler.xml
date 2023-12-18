@@ -14,6 +14,7 @@
         <module name="dependency-inversion" />
         <module name="interface-segregation" />
         <module name="law-of-demeter" />
+        <module name="state" />
         <module name="facotry" />
         <module name="mediator1" />
         <module name="liskov-substitution" />

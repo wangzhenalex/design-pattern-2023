@@ -1,4 +1,4 @@
-package org.example;
+package org.example.chat;
 
 public abstract class User {
     protected String name;

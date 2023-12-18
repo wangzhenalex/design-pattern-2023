@@ -19,6 +19,7 @@
         <module>dependency-inversion</module>
         <module>interface-segregation</module>
         <module>liskov-substitution</module>
+        <module>state</module>
     </modules>
 
     <properties>

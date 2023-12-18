@@ -1,4 +1,4 @@
-package org.example;
+package org.example.chat;
 
 public abstract class ChatMediator {
     public abstract void register(User user);

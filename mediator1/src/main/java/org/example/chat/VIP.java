@@ -1,7 +1,7 @@
-package org.example;
+package org.example.chat;
 
-public class Member extends User {
-    public Member(String name ,ChatMediator mediator) {
+public class VIP extends User {
+    public VIP(String name , ChatMediator mediator) {
         super(mediator);
         this.name = name;
         mediator.register(this);
@@ -9,7 +9,7 @@ public class Member extends User {
 
     @Override
     public void sendMessage(String message) {
-        System.out.println(">>>" + name + ":" + message);
+        System.out.println(">>>[VIP]" + name + ":" + message);
         mediator.notice(this, message);
     }
 
