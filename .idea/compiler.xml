@@ -11,6 +11,7 @@
         <module name="template" />
         <module name="proxy" />
         <module name="duty-chain" />
+        <module name="dependency-inversion" />
         <module name="law-of-demeter" />
         <module name="facotry" />
         <module name="mediator1" />
