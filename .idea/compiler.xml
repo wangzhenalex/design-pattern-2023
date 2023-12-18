@@ -16,6 +16,7 @@
         <module name="law-of-demeter" />
         <module name="facotry" />
         <module name="mediator1" />
+        <module name="liskov-substitution" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -18,6 +18,7 @@
         <module>law-of-demeter</module>
         <module>dependency-inversion</module>
         <module>interface-segregation</module>
+        <module>liskov-substitution</module>
     </modules>
 
     <properties>
