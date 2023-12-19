@@ -25,7 +25,7 @@ public class AirTrafficControl implements Mediator {
     public void send(String message, AirPlan sender) {
         for (AirPlan airPlan : airPlans) {
             if (airPlan != sender) {
-                airPlan.receive(message);
+                airPlan.receive(message,sender);
             }
         }
     }

@@ -17,13 +17,18 @@ public class AirPlan1 implements AirPlan{
     }
 
     @Override
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
     public void send(String message) {
         System.out.println(this.name + " send message: " + message);
         mediator.send(message, this);
 
     }
     @Override
-    public void receive(String message) {
-        System.out.println(this.name + " receive message: " + message );
+    public void receive(String message, AirPlan sender) {
+        System.out.println(this.name + " receive message: " + message + " from " + sender.getName());
     }
 }

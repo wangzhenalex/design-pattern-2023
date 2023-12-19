@@ -8,7 +8,9 @@ package org.example.airplan.after;
  * @Version 1.0
  */
 public interface AirPlan {
+    String  getName();
+
     void send(String message);
 
-    void receive(String message);
+    void receive(String message,AirPlan sender);
 }
